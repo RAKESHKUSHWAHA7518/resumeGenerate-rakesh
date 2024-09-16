@@ -1,0 +1,193 @@
+/* Global */
+
+.hide-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+  /* For WebKit browsers */
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+/* ResumeStyles.css */
+
+.resume-page{
+    background-image: url("/bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Changed to cover to ensure it covers the full screen */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    width: 100%; /* Ensure it covers the full viewport width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */ 
+}
+
+/* Container to ensure A4 page size */
+.resume-container {
+    width: 210mm; /* A4 width */
+    min-height: 297mm; /* A4 height */
+    padding: 30px; /* Margin for print */
+    margin: auto;
+    background: #ffffff;
+    font-family: Arial, sans-serif; /* Default font */
+  }
+  
+  /* Content within the resume */
+  .resume-content {
+    width: 100%;
+    /* box-sizing: border-box; */
+  }
+  
+  /* Ensure page breaks properly on print */
+  @media print {
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+  
+    .resume-container {
+      width: 100%;
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  
+  /* General styling for sections */
+  .font-serif {
+    font-family: serif;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px solid #ccc;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-blue-900 {
+    color: #1e3a8a;
+  }
+  
+  .text-gray-800 {
+    color: #4b5563;
+  }
+  
+  /* Specific item styling */
+  .education-item,
+  .experience-item,
+  .project-item {
+    margin-bottom: 10px;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  /* Text size classes */
+  .text-12px {
+    font-size: 12px;
+  }
+  
+  .text-13px {
+    font-size: 13px;
+  }
+  
+  .text-medium {
+    font-size: 14px;
+  }
+  
+  .small-caps {
+    font-variant: small-caps;
+  }
+  
+  ul {
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+
+
+  /* Resume.css */
+
+.resume-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .resume-content {
+    font-family: 'Georgia', serif;
+  }
+  
+  .text-sm {
+    font-size: 12px;
+  }
+  
+  .text-md {
+    font-size: 14px;
+  }
+  
+  .text-xl {
+    font-size: 18px;
+  }
+  
+  .font-serif {
+    font-family: 'Georgia', serif;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .mb-2 {
+    margin-bottom: 8px;
+  }
+  
+  .mb-4 {
+    margin-bottom: 16px;
+  }
+  
+  .mt-2 {
+    margin-top: 8px;
+  }
+  
+  .mt-4 {
+    margin-top: 16px;
+  }
+  
+  .text-blue-900 {
+    color: #1e3a8a;
+  }
+  
+  .border-gray-500 {
+    border-color: #6b7280;
+  }
+  
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+
+
+  /* resumeDesign 2 */
+
+  
+  
+  
